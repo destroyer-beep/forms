@@ -45,10 +45,13 @@ async function formSend(e) {
     e.preventDefault();
 
     let formData = new FormData(form);
-    console.log(formData)
+    console.log(...formData)
 
     let response = await fetch('sendmail.php', {
         method: 'POST',
+        headers: {
+        'Access-Control-Allow-Origin': '*'
+    },
         body: formData
     });
 
