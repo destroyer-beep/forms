@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Конвертер валют</title>
+</head>
+<body>
+<header class="header">
+  <h1>Конвертер валют</h1>
+</header>
+
+    <main class="main">
+      <form action="#" id="form">
+      <div class="block">
+          <label for="rub">RUB</label>
+          <input class="control_1 _req" id="input" name='rub' type=number" id="rub" placeholder="Введите сумму в рублях" required>
+          <select name="select" id="select">
+            <option value="USD" id="USD">USD</option>
+            <option value="EUR" id="EUR">EUR</option>
+            <option value="GBP" id="GBP">GBP</option>
+          </select>
+          <label for="result">Стоимость в валюте</label>
+          <input class="control_2" name="result" id="result" type="number" id="result" placeholder="Итого" disabled>
+          <input class="control_3 _req" name="email" type="email" id="email" placeholder="Введите вашу почту" required>
+          <button class="btn" type="submit">Записаться на обмен валюты</button>
+      </div>
+      </form>
+    </main>
+    
+    <footer class="footer"></footer>
+    <script src="script.js"></script>
+</body>
+</html>
