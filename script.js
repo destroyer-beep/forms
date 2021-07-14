@@ -49,9 +49,6 @@ async function formSend(e) {
 
     let response = await fetch('sendmail.php', {
         method: 'POST',
-        headers: {
-        'Access-Control-Allow-Origin': '*'
-    },
         body: formData
     });
 
